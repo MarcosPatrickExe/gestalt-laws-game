@@ -6,5 +6,5 @@ Software à ser desenvolvido ao longo da cadeira de Projeto Integrado 1 que visa
 
 ### `Alunos:`
 
-Wallace Leite, Angelo Lucas, Igor Mourão e Marcos Patrick 
+Wallace Leite || Angelo Lucas || Igor Mourão || Marcos Patrick 
 
