@@ -2,7 +2,7 @@
 
 ## Do que se trata o projeto?
 
-Software (em desenvolvimento ao longo da cadeira de Projeto Integrado 1) que procura tornar o aprendizado das 8 leis da teoria da Gestalt de forma dinâmica e interativa através de mini-jogos. A teoria em questão é lecionada na cadeira de Cognição e Tecnologias Digitais, a qual se encontra disponível aos alunos do 2º semmeste ou de semestres mais à frente do curso.
+Criação de um software web que procura tornar o aprendizado das 8 leis da teoria da Gestalt de forma dinâmica e interativa através de mini-jogos. A teoria em questão é lecionada na cadeira de Cognição e Tecnologias Digitais, a qual se encontra disponível aos alunos do 2º semmeste ou de semestres mais à frente do curso. O sistema estará em desenvolvimento ao longo de todo o período de vigor da cadeira de Projeto Integrado 1.
 
 <Hr />
 
