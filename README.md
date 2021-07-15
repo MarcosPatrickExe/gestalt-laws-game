@@ -2,13 +2,16 @@
 
 ## Do que se trata o projeto:grey_question:
 
-Criação de um software web que procura tornar o aprendizado das 8 leis da teoria da Gestalt de forma dinâmica e interativa através de mini-jogos. A teoria em questão é lecionada na cadeira de Cognição e Tecnologias Digitais, a qual se encontra disponível aos alunos do 2º semmeste ou de semestres mais à frente do curso. O sistema estará em desenvolvimento ao longo de todo o período de vigor da cadeira de Projeto Integrado 1.
+Criação de um software web pela a equipe Otacus's Designers que procura tornar o aprendizado das 8 leis da teoria da Gestalt de forma dinâmica e interativa através de mini-jogos. A teoria em questão é lecionada na cadeira de Cognição e Tecnologias Digitais, a qual se encontra disponível aos alunos do 2º semmeste ou de semestres mais à frente do curso. O sistema estará em desenvolvimento ao longo de todo o período de vigor da cadeira de Projeto Integrado 1.
 
 <Hr />
 
-### `Alunos:`
+### `Integrantes da equipe:`
 
-:boy: Wallace Leite  ||  Angelo Lucas  ||  Igor Mourão  ||  Marcos Patrick 
+:large_orange_diamond: Wallace Leite
+:large_orange_diamond: Igor Mourão
+:large_orange_diamond: Marcos Patrick
+:large_orange_diamond: Angelo Lucas
 
 <Hr />
 
