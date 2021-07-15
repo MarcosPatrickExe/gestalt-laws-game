@@ -27,9 +27,10 @@ Despois de baixado siga os seguinte passos:
 ### :three: Copie o endereço absoluto do local do projeto ( Ex: C:\Users\NomeDaSuaConta\Downloads\gestalt-laws-game )
 ### :four: Abra o prompt de comando do windows
 ### :five: Digite "cd", clique na barra de espaco e cole o endereço
-### :six: Agora execute o comando "npm start" ou "yarn start" (caso você já tenha a dependência do yarn instalada)
+### :six: Digite e execute o comando "npm install"
+### :seven: Agora execute o comando "npm start" ou "yarn start". Esse último só é vádlido se você já tem a dependência do yarn instalada
 
 A partir daí o seu navegador padrão abrirá uma nova aba automaticamente e a interface da aplicação será exibida. Lembrando que essa etapa demora só um pouco para ocorrer.
 Caso não aconteça nada, siga o passo 7 logo abaixo:
 
-### :seven: Crie uma aba no seu navegador e digite "localhost:3000". Se mesmo assim não aparecer a interface do sistema consulte o pronpt para ver em qual local o programa está rodando (que geralmente é indicado no trecho "application is running in: "). Copie e cole o nome desse local na URL do browser e a aplicação aparecerá!
+### :eight: Crie uma aba no seu navegador e digite "localhost:3000". Se mesmo assim não aparecer a interface do sistema consulte o pronpt para ver em qual local o programa está rodando (que geralmente é indicado no trecho "application is running in: "). Copie e cole o nome desse local na URL do browser e a aplicação aparecerá!
