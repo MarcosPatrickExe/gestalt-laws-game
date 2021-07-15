@@ -1,4 +1,4 @@
-# Gestalt laws game - Jogo de leis da Gestalt
+# Gestalt laws game - Jogo das leis da Gestalt
 
 ## Do que se trata o projeto?
 
