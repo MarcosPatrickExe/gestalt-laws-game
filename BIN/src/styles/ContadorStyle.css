@@ -1,0 +1,43 @@
+@keyframes virarPlaca{
+    from{
+        top: -35%;
+        transform: rotateX(180deg);
+    }
+
+    to{
+        top: 0%;
+        transform: rotateX(360deg);
+    }
+}
+
+.contadorBox{
+    position: absolute;
+    left: 2%;
+    top: -35%;
+    width: 23%;
+    height: 28.5%;
+
+    animation-name: virarPlaca;
+    animation-fill-mode: forwards;
+    animation-delay: 0.7s; 
+    animation-duration: 1.5s;
+    /*animation-direction: reverse;*/
+    animation-timing-function: ease-out;
+}
+
+#imgMoldura{
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+#segundos{
+    position: relative;
+    font-size: 560%;
+    left: 0;
+    top: 0;
+    margin-left: 25%;
+    margin-top: -44%;
+    color: white;
+    z-index: 150;
+    text-shadow: 5px 5px 0px rgb(70, 49, 17);
+}

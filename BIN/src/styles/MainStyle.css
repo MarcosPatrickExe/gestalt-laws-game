@@ -1,0 +1,130 @@
+:root{
+    --widthHeightHomeButton: 130px;
+    --corDosBotoes: rgb(85, 85, 85);
+}
+
+@keyframes virarPlaca{
+    from{
+        top: -100px;
+        transform: rotateX(180deg);
+    }
+
+    to{
+        top: 0px;
+        transform: translateY(30px);
+        transform: rotateX(360deg);
+    }
+}
+
+#botaoTelaSelecao{
+    position: absolute;
+    left: 85%;
+    top: 0%;
+    width: 300px;
+    height: 100px;
+    background-color: rgb(255, 185, 138);
+    background-image: url('../images/botaoSelecao.svg');
+    background-repeat: no-repeat;
+    background-color: transparent;
+    z-index: 120;
+
+    animation-name: virarPlaca;
+    animation-fill-mode: forwards;
+    /*animation-delay: 3s; */
+    animation-duration: 1s;
+    /*animation-direction: reverse;*/
+}
+
+/*  BOTAO HOME ANTIGO
+#botaoTelaSelecao{
+    background-color: rgb(255, 185, 138);
+    background-image: url('../images/home icon.png');
+    background-origin: padding-box;
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    background-position: center;
+    position: absolute;
+    top: 4%;
+    left: 5%;
+    width: var(--widthHeightHomeButton);
+    height: var(--widthHeightHomeButton);
+    border-radius: 25px;
+    z-index: 150;
+    box-shadow: 4px 5px 0px 4px rgb(143, 93, 1);
+    border: none;
+}
+*/
+
+/*
+#botaoRanking{/*antigo botao1 da classe ClassiStyles.css 
+    background-color: rgb(197, 101, 21);
+    position: absolute;
+    top: 70%;
+    left: 65%;
+    width: 250px;
+    height: 60px;
+    border-radius: 25px;
+    z-index: 31;
+    box-shadow: 1px 2px 0px 2px rgb(88, 43, 5);
+}
+*/
+/*
+#botaoRanking:hover{ cursor: url("../images/cursor/curse.png"), auto; }
+*/
+
+
+/*
+
+#botaoTorreIgreja{
+    background-color: var(--corDosBotoes);
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    width: 250px;
+    height: 60px;
+    border-radius: 25px;
+    z-index: 144;
+    box-shadow: 1px 2px 0px 2px rgb(3, 2, 63);
+}
+
+span{
+    font-size: 33px;
+    cursor: 'pointer'; 
+    font-weight: 'bold';
+    color: white;
+    /**-webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(34, 36, 39);
+    text-shadow: 0.17em  0.11em 0.1em black;
+}
+
+
+#botaoMoinho{
+    background-color: var(--corDosBotoes);
+    position: absolute;
+    top: 55%;
+    left: 700px;
+    width: 250px;
+    height: 60px;
+    border-radius: 25px;
+    z-index: 34;
+    box-shadow: 1px 2px 0px 2px rgb(3, 2, 63);
+}
+#botaoMoinho:hover{ cursor: url("../images/cursor/curse.png"), auto; }
+*/
+
+
+
+.laboratorio{
+    background-color: var(--corDosBotoes);
+    position: absolute;
+    top: 40%;
+    left: 700px;
+    width: 250px;
+    height: 60px;
+    border-radius: 25px;
+    z-index: 33;
+    box-shadow: 1px 2px 0px 2px rgb(3, 2, 63);
+}
+.laboratorio:hover{
+    cursor: not-allowed;
+}

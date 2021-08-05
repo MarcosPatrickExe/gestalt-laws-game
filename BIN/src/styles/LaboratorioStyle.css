@@ -1,0 +1,5 @@
+#FundoLaboratorio{
+    background-image: url('../images/backgrounds/fundoLaboratorio.jpg');
+    background-repeat: no=repeat;
+    z-index: 100;
+}

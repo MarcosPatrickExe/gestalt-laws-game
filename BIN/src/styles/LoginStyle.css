@@ -1,0 +1,82 @@
+#boxNomeJogador{
+    position: absolute;
+    left: 23%;
+    top: 30%;
+    height: 500px;
+    width: 600px;
+    background-image: url('../images/porta/molduraNome.svg');
+    background-repeat: no-repeat;
+    z-index: 100;
+}
+
+input{
+    font-family: "georgia";
+    position: absolute;
+    top: 21.0%;
+    left: 14.3%;
+    background-color: rgb(192, 192, 192);
+    height: 27px;
+    width: 420px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#botaoEntrar{
+    background-color: rgb(255, 141, 10);
+    border-radius: 20px;
+    height: 50px;
+    width: 120px;
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
+    box-shadow: -2px 2px 0px 3px rgb(97, 56, 3);
+    text-shadow: 2.9em 2.9em 0.5em 2.0em black;
+    margin-top: 25%;
+    margin-left: 40%;
+}
+
+
+
+/*
+.formulario{
+    z-index: 25;
+    position: absolute;
+    left: 37%;
+    top: 30%;
+    background-color: rgb(163, 114, 82);
+    width: 260px;
+    height: 140px;
+    border: 5px solid rgb(117, 36, 3);
+    box-shadow: 3px 3px 10px 5px rgb(83, 31, 1);
+}
+*/
+
+/*
+.formulario label .InsiraSeuNome{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    top: 5%;
+    left: 3%;
+}
+*/
+
+/*
+.formulario .fundoEscrevaNome{
+    background-color: rgb(124, 71, 33);
+    width: 100%;
+    height: 50px;
+}
+*/
+
+/*.formulario .fundoEscrevaNome input{/*caixa de texto*/
+
+
+
+/*
+.imagemInserida{
+    height: 100%;
+    width: 100%;
+}
+*/
