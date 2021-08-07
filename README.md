@@ -44,4 +44,4 @@ Despois de baixado siga os seguinte passos:
 A partir daí o seu navegador padrão abrirá uma nova aba automaticamente e a interface da aplicação será exibida. Lembrando que essa etapa demora só um pouco para ocorrer.
 Caso não aconteça nada, siga o passo 7 logo abaixo:
 
-### :eight: Crie uma aba no seu navegador e digite "localhost:3000". Se mesmo assim não aparecer a interface do sistema consulte o pronpt para ver em qual local o programa está rodando (que geralmente é indicado no trecho "application is running in: "). Copie e cole o nome desse local na URL do browser e a aplicação aparecerá!
+### :eight: Crie uma aba no seu navegador e digite "localhost:3000". Se mesmo assim não aparecer a interface do sistema consulte o prompt para ver em qual local o programa está rodando (que geralmente é indicado no trecho "application is running in: "). Copie e cole o nome desse local na URL do browser e a aplicação aparecerá!
