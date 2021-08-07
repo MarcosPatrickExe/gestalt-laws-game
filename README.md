@@ -23,6 +23,24 @@ Criação de um software web pela a equipe <strong>OTACUS'S DESIGNERS</strong> q
 ### `Link de acesso ao jogo online:`
 https://marcospatrickexe.github.io/gestalt-laws-game-deploy/
 
+<Hr />
+
+### `Requisitos funcionais gerais`:  
+:large_blue_circle: RF01: Input do Mouse/Teclado  <Br />
+:large_blue_circle: RF02: Seleção de Cenário <Br />
+:large_blue_circle: RF03: Armazenamento do nome do jogador <Br />
+:large_blue_circle: RF04: Armazenamento do tempo levado para a conclusão das atividades <Br />
+:large_blue_circle: RF05: Acesso ao banco de dados <Br />
+:large_blue_circle: RF06: Feedbacks instantâneos (reações animadas em resposta às ações do usuário)<Br />
+:large_blue_circle: RF07: Nível de Progressão <Br />
+
+### `Requisitos funcionais selecionados para o checkpoint 3 || 71% dos requistos gerais`:
+:heavy_check_mark: RF01: Input do Mouse/Teclado <Br />
+:heavy_check_mark: RF02: Seleção de Cenário <Br />
+:heavy_check_mark: RF03: Armazenamento do nome do jogador <Br />
+:heavy_check_mark: RF04: Armazenamento do tempo levado para a conclusão das atividades <Br />
+:heavy_check_mark: RF06: Feedbacks instantâneos <Br />
+
 ### :warning: `Orientações para a execução do software` :warning:
 
 Antes de tudo, é necesário que você tenha instalado no seu pc o ambiente do NodeJS para que assim o sistema possa ser executado.
