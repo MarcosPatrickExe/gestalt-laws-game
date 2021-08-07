@@ -52,10 +52,10 @@ Se você já tiver o NodeJS instalado em sua máquina baixe o projeto clicando n
 Despois de baixado siga os seguinte passos:
 
 ### :one: descompacte o arquivo baixado
-### :two: Abra ele com o seu gerenciador de arquivos
-### :three: Copie o endereço absoluto do local do projeto ( Ex: C:\Users\NomeDaSuaConta\Downloads\gestalt-laws-game )
+### :two: Abra ele com o seu gerenciador de arquivos e entre na pasta BIN
+### :three: Dentro dessa pasta, copie o endereço absoluto de onde você se encontra ( Ex: C:\Users\NomeDeUsuario\Downloads\gestalt-laws-game-main\BIN\ )
 ### :four: Abra o prompt de comando do windows
-### :five: Digite "cd", clique na barra de espaco e cole o endereço
+### :five: Digite cd, dê um espaço, cole o endereço e dê ENTER
 ### :six: Digite e execute o comando "npm install"
 ### :seven: Agora execute o comando "npm start" ou "yarn start". Esse último só é vádlido se você já tem a dependência do yarn instalada
 
