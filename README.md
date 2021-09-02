@@ -16,7 +16,7 @@ Criação de um software web pela a equipe <strong>OTACUS'S DESIGNERS</strong> q
 <Hr />
 
 ### `Status do projeto:`
-:pushpin: Em desenvolvimento... :computer:
+:pushpin: Em fase de produção... :computer:
 
 <Hr />
 
@@ -34,12 +34,14 @@ https://marcospatrickexe.github.io/gestalt-laws-game-deploy/
 :large_blue_circle: RF06: Feedbacks instantâneos (reações animadas em resposta às ações do usuário)<Br />
 :large_blue_circle: RF07: Nível de Progressão <Br />
 
-### `Requisitos funcionais selecionados para o checkpoint 3 || 71% dos requistos gerais`:
+### `Requisitos funcionais concluídos para o checkpoint 4`:
 :heavy_check_mark: RF01: Input do Mouse/Teclado <Br />
 :heavy_check_mark: RF02: Seleção de Cenário <Br />
 :heavy_check_mark: RF03: Armazenamento do nome do jogador <Br />
 :heavy_check_mark: RF04: Armazenamento do tempo levado para a conclusão das atividades <Br />
 :heavy_check_mark: RF06: Feedbacks instantâneos <Br />
+:large_blue_circle: RF05: Acesso ao banco de dados <Br /> 
+:large_blue_circle: RF07: Nível de Progressão <Br />
 
 ### :warning: `Orientações para a execução do software` :warning:
 
