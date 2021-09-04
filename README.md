@@ -39,8 +39,8 @@ https://marcospatrickexe.github.io/gestalt-laws-game-deploy/
 :heavy_check_mark: RF02: Seleção de Cenário <Br />
 :heavy_check_mark: RF03: Armazenamento do nome do jogador <Br />
 :heavy_check_mark: RF04: Armazenamento do tempo levado para a conclusão das atividades <Br />
-:heavy_check_mark: RF06: Feedbacks instantâneos <Br />
 :heavy_check_mark: RF05: Acesso ao banco de dados <Br /> 
+:heavy_check_mark: RF06: Feedbacks instantâneos <Br />
 :heavy_check_mark: RF07: Nível de Progressão <Br />
 
 ### :warning: `Orientações para a execução do software` :warning:
