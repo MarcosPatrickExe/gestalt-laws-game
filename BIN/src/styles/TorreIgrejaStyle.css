@@ -1,0 +1,285 @@
+/*{padding: 0; margin: 0;}*/
+
+/*div{ background-color: blue;}
+*/
+
+.avisoParabensDesativado{
+    background-image: linear-gradient(to left, rgba(0, 0, 0 , 1.0), rgba(0, 0, 0, 0.1) );
+    position: absolute;
+    left: 100%;
+    top: 16%;
+    height: 90%;
+    width: 60%;
+    z-index: 1000;
+
+    animation-name: animacaoFinal;
+}
+
+.avisoParabensAtivado{
+    transition-property: all;
+    transition-duration: 2s;
+    transition-delay: 1s;
+    transform: translateX(-90%); 
+}
+
+#avisoParabens, h2{
+    position: absolute;
+    color: white;
+    right: 10%;
+    text-align: right;
+    font-size: 200%;
+}
+
+
+@keyframes rotacionarMedalhao{
+     from{ 
+         transform: rotateY(0deg); 
+         position: absolute; 
+         top: 5%;
+         left: 10%;/*-7%*/
+         height: 92%; 
+         width: 52%; 
+         z-index: 1004;
+     }
+
+     to{ 
+         transform: rotateY(360deg);
+         position: absolute; 
+         top: 5%;
+         left: 10%;/*-7%*/
+         height: 92%; 
+         width: 52%; 
+         z-index: 1004;
+    }
+}
+
+@keyframes animacaoFinal{
+    from{
+        position: absolute; 
+        left: 42.7%; 
+        top: 11.5%; 
+        height: 31%; 
+        width: 17.8%; 
+        z-index: 10;
+        animation-name: animacaoFinal;
+    }
+
+    to{
+        position: absolute; 
+        top: 5%;
+        left: 10%;/*-7%*/
+        height: 92%; 
+        width: 52%; 
+        z-index: 1004;
+        animation-name: rotacionarMedalhao;
+        /*
+        top: 20%;
+        left: 10%;
+        height: 300%; 
+        width: 300%; 
+        z-index: 1000;
+
+        */
+       /* background-image: url('../images/amuleto_partes_v2/amuleto_amarelo.svg');
+        background-color:rgb(0,0,0,0.3);
+        transform: scale(4.2);*/
+    }
+
+}
+/*proporção da foto do cenário da torre da igreja: 1,778990450204638. (1304x733)*/
+
+
+/*------------------------------- PEDAÇOES DO MEDALHÃO E O PRÓPRIO MEDALHÃO: --------------------------------------*/
+
+.divMedalhao{
+    position: absolute; 
+    left: 42.7%; 
+    top: 11.5%; 
+    height: 31%; 
+    width: 17.8%; 
+    z-index: 10;
+/*
+    display: flex;
+    justify-content: center; */
+}
+
+.divMedalhaoAnimacao{
+    position: absolute; 
+    left: 42.7%; 
+    top: 11.5%; 
+    height: 31%; 
+    width: 17.8%;
+    /*position: absolute; 
+    top: 5%;
+    left: 9%;
+    height: 92%; 
+    width: 52%; */
+    z-index: 1000;
+    /*
+    left: 42.7%; 
+    top: 11.5%; 
+    height: 31%; 
+    width: 17.8%;*/ 
+
+    animation-name: animacaoFinal;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+   /* animation-iteration-count: infinite;
+    animation-direction: alternate; */
+}
+
+
+.rotacionarr{
+    animation-name: rotacionarMedalhao;
+    animation-duration: 2.8s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+.centroMedalhao{  
+    position: relative;
+    width: 100%;
+    height: 100%;	
+    left: 50%;
+    top: 50%;
+    z-index: 5;
+    background-image: url('../images/imagens_jogo_torre/medalhaoContornado2SVG.svg'); 
+    background-repeat: no-repeat;
+    background-size: 96% ;
+    background-position: center;
+    transform: translateX(-50%) translateY(-50%);
+
+    transition-property: background-image;
+    transition-duration: 0.5s;
+    /*
+    position: absolute; 
+    padding: 0%;
+    left: 42.4%; 
+    top: 10.2%; 
+    height: 33.7%; 
+    width: 18.7%; 
+    z-index: 18; 
+    background-image: url('../images/amuleto_partes_v2/Amuleto_cinza_versao_atualizada.svg'); 
+    background-color: blueviolet;
+    background-repeat: no-repeat; 
+    background-position: center center;
+    background-size: cover; */
+}
+
+.centroMedalhao:hover{
+   position: relative;
+    width: 100%;
+    height: 100%;	
+    left: 50%;
+    top: 50%;
+    z-index: 5;
+    background-image: url('../images/imagens_jogo_torre/medalhaoAmarelo.png');
+    background-repeat: no-repeat;
+    background-size: 97% ;
+    background-position: center;
+
+    transform: translateX(-50%) translateY(-50%);
+    transition-property: background-image;
+    transition-duration: 0.5s;
+/*   background-image: url('../images/amuleto_partes_v2/medalhaoAmarelo.png');
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: 95% 93.8%;*/
+}
+
+
+
+.centroMedalhaoCompleto{ 
+    position: relative;
+    width: 100%;
+    height: 100%;	
+    left: 50%;
+    top: 50%;
+    z-index: 1006;
+    background-repeat: no-repeat; 
+    background-position: center;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: 100%;
+    background-image: url('../images/imagens_jogo_torre/Amuleto_amarelo_versao_atualizada.svg');
+
+    transition-property: background-image;
+    transition-duration: 1.5s;
+
+    /*
+    animation-name: animacaoFinal;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    /*animation-fill-mode: forwards;  
+    animation-iteration-count: infinite;
+    animation-direction: alternate;  */
+
+    /*
+    position: absolute; 
+    padding: 0%;
+    left: 42.4%; 
+    top: 10.2%; 
+    height: 33.7%; 
+    width: 18.7%; 
+    z-index: 18; 
+    background-image: url('../images/amuleto_partes_v2/Amuleto_amarelo_versao_atualizada.svg');
+    background-repeat: no-repeat; 
+    background-color: blueviolet;
+    background-position: center center;
+    background-size: 145% 145%; 
+    
+    transition-property: background-image;
+    transition-duration: 2s;
+    */
+
+    /*
+    transition-property: background-image;
+    transition-duration: 1s;
+    transition-property: all;
+    transition-delay: 3s;
+    transition-duration: 3s;
+    transition-timing-function: ease-in; */
+    
+}
+
+
+/* ESTILO DOS ELEMENTOS ANTES DE SEREM ENCAIXADOS NO CENTRO DO MEDALHÃO: */
+.circuloCentro{ position: absolute; z-index: 21; width: 8.999812820721588%; height: 14.92109038737446%;} /*height: 100px;  width: 112px*/
+.baixoDir{ position: absolute; z-index: 19; width: 5.806656045629386%; height: 11.33428981348637%; } /*height: 79px; width: 72px;*/
+.baixoEsq{ position: absolute; z-index: 19; width: 5.322768041826937%; height: 11.477761836441894%;  } /*height: 80px; width: 66px;*/
+.cimaDir{ position: absolute; z-index: 20; width: 5.7260080449956445%; height: 9.612625538020086%;  } /*  height: 67px; width: 71px; */
+.cimaEsq{ position: absolute; z-index: 20; width: 5.59994551721444245%; height: 10.043041606886657%;  } /* height: 67px; width: 71px; */
+.taca{ position: absolute; z-index: 22;  width: 6.451840050699317%; height: 14.06025824964132%;  } /* height: 98px; width: 80px; */
+
+
+/* ESTILO DOS ELEMENTOS DEPOIS DE SEREM ENCAIXADOS NO CENTRO DO MEDALHÃO: */
+.circuloCentroEncaixe{ position: absolute; z-index: 21;  width: 8.999812820721588%; height: 13.92109038737446%;   }
+.baixoDirEncaixe{ position: absolute; z-index: 19; width: 5.806656045629386%; height: 11.33428981348637%;  }
+.baixoEsqEncaixe{ position: absolute; z-index: 19; width: 5.322768041826937%; height: 11.477761836441894%;  }
+.cimaDirEncaixe{ position: absolute; z-index: 20;  width: 5.7260080449956445%; height: 9.612625538020086%;  }
+.cimaEsqEncaixe{ position: absolute; z-index: 20;  width: 5.59994551721444245%; height: 10.043041606886657%;   }
+.tacaEncaixe{ position: absolute; z-index: 22; width: 6.451840050699317%; height: 14.06025824964132%; }
+
+
+/*original é 1051-1437*/
+
+
+/*  ESTILO DOS DEMAIS OBJETOS DO CENÁRIO:   H: 697 // W: 1239.9563437926327   */
+#machadoGrande{   height: 25.82496413199426%; width: 28.226800221809517%; z-index: 201;  } /* height: 180px; width: 350px;*/
+#escudoParede{  height: 31.563845050215206%; width: 12.903680101398635%; z-index: 200; background-image: url('../images/imagens_jogo_torre/escudo - parede.svg'); background-repeat: no-repeat; }/*height: 220px; width: 160px;*/
+#escudoMesa{  height: 28.694404591104733%; width: 17.742560139423125%; z-index: 204; background-image: url('../images/imagens_jogo_torre/escudo - mesa.svg'); background-repeat: no-repeat } /* height: 200px; width: 220px;*/
+#pergaminho{  width: 12.097200095061221%; height: 21.52080344332855%; z-index: 199; }  /*height: 150px; width: 150px;*/
+/*#armadura{  height: 480px; width: 200px; z-index: 203; } /*height: 480px; width: 200px;*/
+#machado{  width: 16.129600126748295%; height: 13.629842180774748%; z-index: 202; background-image: url('../images/imagens_jogo_torre/machado.svg'); background-repeat: no-repeat} /* height: 95px; width: 200px; */
+#barril{  width:  14.06025824964132%;  height:32.99889363430919%; z-index: 202; background-image: url('../images/imagens_jogo_torre/barril.svg'); background-repeat: no-repeat} /* height: 235px; width: 180px; */
+#caneca{ width: 6.451840050699317%; height: 12.91248206599713%; z-index: 201; background-image: url('../images/imagens_jogo_torre/caneca.svg'); background-repeat: no-repeat}  /* height: 90px; width: 80px; */
+#tampa{  width: 8.064800063374147%; height: 4.3041606886657105%; z-index: 201; background-image: url('../images/imagens_jogo_torre/tampa.svg'); background-repeat: no-repeat}  /* height: 30px; width: 100px; */
+#jarra{ width: 10.484240082386392%; height: 30.12912482065997%; z-index: 199; background-image: url('../images/imagens_jogo_torre/Jarra.svg'); background-repeat: no-repeat} /* height: 210px; width: 130px; */
+#caneta{ width: 7.984152062740406%; height: 21.52080344332855%; z-index: 198; } /*height: 150px; width: 99px;*/
+#papel{  width: 12.097200095061221%; height: 0.2152080344332855%; z-index: 201; } /*height: 150px; width: 150px;*/
+
+
+.objetos{ position: absolute; }
+img{ height: 100%; width: 100%; }

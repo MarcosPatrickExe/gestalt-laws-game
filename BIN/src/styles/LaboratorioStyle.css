@@ -1,0 +1,396 @@
+/* EFEITO PISCAR QUE OCORRE QUANDO AS PEÇAS SÃO GIRADAS PARA A DIREÇÃO CORRETA. 
+ELE OCORRE NO ESPAÇO CENTRAL VAZIO QUE ESTÁ RODEADO DAS PEÇAS GIRATÓRIAS, FAZENDO APARECER 
+RAPIDAMENTE A IMAGEM COMPLETA DE UM CAVALO OU DO PASSARO. */
+/*
+@keyframes piscar{
+    0%{ opacity: 0.25; }
+    25%{ opacity: 0.5; }
+    50%{ opacity: 1.0; }
+    75%{ opacity: 0.5; }
+    100%{ opacity: 0.25; }
+}
+*/
+
+
+@keyframes trocarGlobo{
+    10%{ background-image: url('../images/imagens_jogo_laboratorio/fase_globo_quebrado/globo_inteiro.png'); top: -1%; z-index: 50;}
+
+    30%{ background-image: url('../images/imagens_jogo_laboratorio/fase_globo_quebrado/globo_rachadura_01.png'); top: -1%; z-index: 50;}
+
+    50%{ background-image: url('../images/imagens_jogo_laboratorio/fase_globo_quebrado/globo_rachadura_02.png'); top: -1%; z-index: 50;}
+
+    70%{ background-image: url('../images/imagens_jogo_laboratorio/fase_globo_quebrado/globo_rachadura_03.png'); top: -1%; z-index: 50;}
+
+    80%{ background-image: url('../images/imagens_jogo_laboratorio/fase_globo_quebrado/globo_rachadura_04.png'); top: -1%; z-index: 50;}
+
+    100%{ background-image: url('../images/imagens_jogo_laboratorio/fase_globo_quebrado/sem_globo.png');  top: 5%; z-index: 1;}
+}
+
+
+
+@keyframes baterAsas{
+    0%{ 
+        background-image: url('../images/imagens_jogo_laboratorio/Animais_laboratorio/passaro_parado.png');
+    }
+
+    100%{
+        background-image: url('../images/imagens_jogo_laboratorio/Animais_laboratorio/passaro_voando.png'); 
+    }
+}
+
+@keyframes voar{
+    0%{ 
+        position: absolute;
+        left:  50.10%; 
+        top:  5.0%; 
+        height: 27%; 
+        width: 20%;
+        z-index: 3000;
+    }
+
+    50%{
+        position: absolute;
+        left:  70.10%; 
+        top:  23.0%; 
+        height: 27%; 
+        width: 20%; 
+        z-index: 3000;
+    }
+
+    100%{
+        position: absolute;
+        left:  20.10%; 
+        top:  23.0%; 
+        height: 27%; 
+        width: 20%; 
+        z-index: 3000;
+    }
+}
+
+
+.pecas{
+    position: absolute;
+    background-repeat: no-repeat;
+    padding: 0px;
+    z-index: 1000;
+    
+    object-fit: fill;/*
+    background-size: 100%;*/
+    background-position: center;
+    transition: transform 0.3s linear 0s;
+}
+
+/*
+.peixeCompleto{ 
+    position: absolute;
+    left:  22.5078%; 
+    top:  56.8765%; 
+    height:  40.4400%; 
+    width:  57.903%;
+    z-index: 900;
+    opacity: 0.35;
+    background-image: url('../images/imagens_jogo_laboratorio/animais_atualizado/peixe/completo.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+*/
+
+/*
+.piscarPeixe{
+    position: absolute;
+    left:  22.5078%; 
+    top:  56.8765%; 
+    height:  40.4400%; 
+    width:  57.903%;
+    z-index: 900;
+    opacity: 0.25;
+    background-image: url('../images/imagens_jogo_laboratorio/animais_atualizado/peixe/completo.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation-name: piscar;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.3s;
+}
+*/
+
+
+/*------------------------------------PEÇAS PARA MONTAR O PEIXE----------------------------------*/
+#caudaPeixe{
+    left:  24.3176%; 
+    top:  66.6284%; 
+    height:  20.6028%; 
+    width:  11.5183%;
+    background-image: url('../images/imagens_jogo_laboratorio/animais_atualizado/peixe/1.svg');
+    transform: rotate(180deg); 
+}   
+#nadadeiraInferiorTrazeira{ 
+    left:  37.2813%; 
+    top:  82.0756%; 
+    height:  12.9546%; 
+    width:  8.2600%;
+    background-image: url('../images/imagens_jogo_laboratorio/animais_atualizado/peixe/2.svg');
+    transform: rotate(180deg);  
+}
+#nadadeiraInferiorBarriga{ 
+    left:  47.9569%; 
+    top:  85.6499%; 
+    height:  9.1961%; 
+    width:  6.0156%;/*
+    background-image: url('../images/imagens_jogo_laboratorio/passaroSVG/10.svg'); */
+    background-image: url('../images/imagens_jogo_laboratorio/animais_atualizado/peixe/3.svg');
+    transform: rotate(90deg);
+}
+#barrigaPeixe{ 
+    left:  55.5922%; 
+    top:  86.7453%; 
+    height:  3.9983%; 
+    width:  3.8488%;/*
+    background-image: url('../images/imagens_jogo_laboratorio/passaroSVG/8.svg');*/
+    background-image: url('../images/imagens_jogo_laboratorio/animais_atualizado/peixe/4.svg');
+    transform: rotate(270deg);  
+}
+#nadadeiraInferiorDianteira{ 
+    left:  61.3165%; 
+    top:  84.6458%; 
+    height:  10.5937%; 
+    width: 6.5808%;
+    background-image: url('../images/imagens_jogo_laboratorio/animais_atualizado/peixe/5.svg');
+    transform: rotate(180deg);  
+}
+#boca{ 
+    left:  71.7483%; 
+    top:  71.1640%; 
+    height: 12.6983%; 
+    width:  6.1088%;
+    background-image: url('../images/imagens_jogo_laboratorio/animais_atualizado/peixe/6.svg');
+    transform: rotate(0deg); 
+}   
+#testa{ 
+    left:  60.6900%; 
+    top: 63.8027%; 
+    height:  7.5612%; 
+    width:  6.9095%;
+    background-image: url('../images/imagens_jogo_laboratorio/animais_atualizado/peixe/7.svg');
+    transform: rotate(90deg);
+}
+#nadadeiraSuperior{ 
+    left:  46.6753%; 
+    top:  54.9228%; 
+    height:  16.2983%; 
+    width:  10.2296%;
+    background-image: url('../images/imagens_jogo_laboratorio/animais_atualizado/peixe/8.svg');
+    transform: rotate(90deg);
+}
+#nadadeiraSuperiorTrazeira{ 
+    left:  36.7256%; 
+    top:  63.9836%; 
+    height:  11.6504%; 
+    width:  6.1272%;
+    background-image: url('../images/imagens_jogo_laboratorio/animais_atualizado/peixe/9.svg');
+    transform: rotate(270deg);
+}
+
+
+/*------------------------------------------------------------------------------------------*/
+
+
+
+
+/*------------------------------------PEÇAS PARA MONTAR O PASSARO----------------------------------*/
+#asaEsquerda1{ 
+    left:  35.7176%; 
+    top:  50.7284%; 
+    height:  14.7028%; 
+    width:  8.0183%;
+    background-image: url('../images/imagens_jogo_laboratorio/animais_atualizado/passaroSVG/1.svg');
+    transform: rotate(0deg);
+}
+#asaEsquerda2{ 
+    left:  39.1813%; 
+    top:  66.3756%; 
+    height:  12.5546%; 
+    width:  6.7600%;
+    background-image: url('../images/imagens_jogo_laboratorio/animais_atualizado/passaroSVG/2.svg');
+    transform: rotate(180deg);
+}
+#asaEsquerda3{ 
+    left:  46.3569%; 
+    top:  56.1499%; 
+    height:  10.4961%; 
+    width:  6.3156%;/*
+    background-image: url('../images/imagens_jogo_laboratorio/passaroSVG/10.svg'); */
+    background-image: url('../images/imagens_jogo_laboratorio/animais_atualizado/passaroSVG/10.svg');
+    transform: rotate(90deg);
+}
+#asaDireita1{ 
+    left:  55.9922%; 
+    top:  63.9453%; 
+    height:  7.1983%; 
+    width:  2.8488%;/*
+    background-image: url('../images/imagens_jogo_laboratorio/passaroSVG/8.svg');*/
+    background-image: url('../images/imagens_jogo_laboratorio/animais_atualizado/passaroSVG/8.svg');
+    transform: rotate(270deg);
+}
+#asaDireita2{ 
+    left:  57.8165%; 
+    top:  52.7458%; 
+    height:  11.5937%; 
+    width: 8.0808%;
+    background-image: url('../images/imagens_jogo_laboratorio/animais_atualizado/passaroSVG/7.svg');
+    transform: rotate(180deg);
+}
+#costa{ 
+    left:  53.5483%; 
+    top:  69.7364%; 
+    height: 3.6983%; 
+    width:  2.8088%;
+    background-image: url('../images/imagens_jogo_laboratorio/animais_atualizado/passaroSVG/9.svg');
+      transform: rotate(0deg);
+}
+#bico{ 
+    left:  60.6900%; 
+    top:  72.5227%; 
+    height:  8.5612%; 
+    width:  3.9095%;
+    background-image: url('../images/imagens_jogo_laboratorio/animais_atualizado/passaroSVG/5.svg');
+     transform: rotate(90deg);
+}
+#barriga{ 
+    left:  55.0753%; 
+    top:  83.9228%; 
+    height:  4.9983%; 
+    width:  3.409600000000001%;
+    background-image: url('../images/imagens_jogo_laboratorio/animais_atualizado/passaroSVG/4.svg');
+     transform: rotate(90deg);
+}
+#cauda{ 
+    left:  40.8256%; 
+    top:  80.5836%; 
+    height:  15.1504%; 
+    width:  8.9272%;
+    background-image: url('../images/imagens_jogo_laboratorio/animais_atualizado/passaroSVG/3.svg');
+    transform: rotate(270deg);
+}
+/*------------------------------------------------------------------------------------------*/
+
+.voando{
+    position: absolute;
+    left:  43.10%; 
+    top:  5.0%; 
+    height: 35%; 
+    width: 23%;
+    z-index: 20;
+    background-image: url('../images/imagens_jogo_laboratorio/Animais_laboratorio/passaro_voando.png');
+    /*background-size: cover;*/
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 1.0;
+   
+
+    animation-name: baterAsas;
+    animation-duration: 0.1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 4s;
+
+}
+
+.parado{
+    position: absolute;
+    left:  20.10%; 
+    top:  5.0%; 
+    height: 31%; 
+    width: 20%;
+    z-index: -5;
+    opacity: 0.0;/*
+    background-image: url('../images/imagens_jogo_laboratorio/Animais_laboratorio/passaro_parado.png');*/
+     /*background-size: cover;*/
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* CAIXA COM A ESFERA DE GELO ONDE SERÃO ROTACIONADAS AS PEÇAS: */
+.caixaGlobo{
+    position: absolute;
+    left:  11.50%; 
+    top:  -1.0%; 
+    height: 101%; 
+    width: 78.800%;
+    z-index: 50;
+    background-image: url('../images/imagens_jogo_laboratorio/fase_globo_quebrado/globo_inteiro.png');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.caixaGloboVariar{
+    position: absolute;
+    left:  11.50%; 
+    top:  -1.0%; 
+    height: 101%; 
+    width: 78.800%;
+    z-index: 50;
+    /*background-image: url('../images/imagens_jogo_laboratorio/fase_globo_quebrado/globo_inteiro.png')*/;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    animation-name: trocarGlobo;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+
+
+
+.sombraEntreGloboFundo{
+    position: absolute;
+    left: -10%;
+    top: 0%;
+    height: 100%;
+    width: 120%;
+    background-color: rgb(0,0,0, 0.51);
+    z-index: 10;
+}
+
+
+/*
+.passaroCompleto{ 
+    position: absolute;
+    left:  35.5078%; 
+    top:  41.1765%; 
+    height:  59.440000000000005%; 
+    width:  31.903%;
+    z-index: 101;
+    opacity: 0.25;
+    background-image: url('../images/imagens_jogo_laboratorio/animais_atualizado/passaroSVG/completo.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+*/
+
+/*
+.piscarPassaro{ 
+    position: absolute;
+    left:  35.5078%; 
+    top:  41.1765%; 
+    height:  59.440000000000005%; 
+    width:  31.903%;
+    z-index: 108;
+    opacity: 0.25;
+    background-image: url('../images/imagens_jogo_laboratorio/animais_atualizado/passaroSVG/completo.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    animation-name: piscar;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.3s;
+}
+*/

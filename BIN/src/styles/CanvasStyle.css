@@ -1,0 +1,30 @@
+body{
+    background-color: rgb(88, 30, 13);    
+    cursor: url("../images/cursor/curse.png"), auto;
+    overflow: hidden;
+/* z-index: -20;  */
+}
+
+
+
+
+/*
+.AlocarBackground{
+    position: absolute;
+    left: 200px;
+    top: 200px;
+    width: auto;
+    height: 100%;
+    background-color: blueviolet;
+}
+*/
+
+/*
+.imagemInserida{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-size: '500px 500px';
+}
+*/
+

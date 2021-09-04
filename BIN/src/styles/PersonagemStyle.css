@@ -1,0 +1,249 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Nova+Oval&display=swap'); */
+/* import da fonte 'Nova Oral' */
+
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@200&display=swap');
+/* import da fonte 'Spectral' */
+
+
+
+@keyframes falando{
+    0%{ background-image: url('../images/Mago_frames/frame01.png'); }
+
+    20%{ background-image: url('../images/Mago_frames/frame02.png'); }
+
+    40%{ background-image: url('../images/Mago_frames/frame03.png'); }
+
+    60%{ background-image: url('../images/Mago_frames/frame04.png'); }
+
+    100%{ background-image: url('../images/Mago_frames/frame05.png'); }
+}
+
+
+.falando{
+    opacity: 1.0;
+    z-index: 4000;
+    position: absolute;
+    left: 7%;
+    top: 26%;
+    height: 75%;
+    width: 40%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url('../images/Mago_frames/frame02.png');
+    animation-name: falando;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+
+
+
+
+
+#fala{
+    position: relative;
+    margin-top: 10.520%;
+    margin-left: 21.110%;
+    margin-right: 6.100%;
+    color: rgb(94, 64, 2);
+    font-size: 175%;
+    font-family: 'Spectral', serif;
+    /*font-family: 'Nova Oval', cursive; */
+    /*font-family: 'Times New Roman', Times, Sans-serif;*/
+    text-align: left; 
+    line-height: 1.5;
+}
+
+
+
+#mensagemParabens #clique{
+    position: absolute;
+    right: 6.10%;
+    left: 21.41%;
+    bottom: 9%;
+    
+    /* border: 1px solid black; */
+    color: rgb(138, 92, 2);
+    font-size: 210%;
+    font-family: 'Nova Oval', cursive; 
+}
+
+/*
+#avancar{
+    position: absolute;
+    left: 25%; 
+    top: 80%;
+
+    color: rgb(138, 92, 2);
+    font-family: 'Nova Oval', cursive; 
+    font-size: 100%;
+    text-align: center;
+}
+*/
+
+#pular{
+    position: absolute;
+    left: 60%; 
+    top: 80%;
+
+    color: rgb(236, 175, 53);
+    font-size: 180%;
+    font-family: 'Nova Oval', cursive; 
+    text-align: center;
+}
+
+/*
+@keyframes aparecer{
+    from{ opacity: 0.0; z-index: 0; }
+    to{ opacity: 1.0; z-index: 2000; }
+}
+*/
+
+@keyframes escurecerFundo{
+    from{ opacity: 0.0; z-index: 0; }
+    to{ opacity: 0.6; z-index: 3000; }
+}
+@keyframes clarearFundo{
+    from{ opacity: 0.6; z-index: 3000; }
+    to{ opacity: 0.0; z-index: 0; }
+}
+
+
+
+
+@keyframes aparecer{
+    from{ opacity: 0.0; z-index: 0; }
+    to{ opacity: 1.0; z-index: 4000; }
+}
+
+@keyframes desaparecer{
+    from { opacity: 0.7; z-index: 4000; }  
+    to { opacity: 0.0; z-index: 0; }  
+} 
+
+.personagemAparecer{
+    opacity: 0.0;
+    z-index: 0;
+    position: absolute;
+    left: 7%;
+    top: 26%;
+    height: 75%;
+    width: 40%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url('../images/Mago_frames/frame02.png');
+    animation-fill-mode: forwards;
+    animation-name: aparecer;
+    animation-duration: 1.0s;
+    animation-delay: 1.5s;
+   /* animation-iteration-count: infinite; */
+   /* animation-direction: normal; */
+    /*transition: all 1s; */
+ }
+
+ .personagemDesaparecer{
+    opacity: 0.7;
+    z-index: 4000;
+    position: absolute;
+    left: 7%;
+    top: 26%;
+    height: 75%;
+    width: 40%;
+    background-image: url('../images/Mago_frames/frame02.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    animation-fill-mode: forwards;
+    animation-name: desaparecer;
+    animation-duration: 1s;
+    animation-delay: 0s;
+   /* animation-direction: normal; */
+    
+    /*transition: all 1s; */
+ }
+
+
+
+ .aparecerCaixaDeMensagem{
+     opacity: 0.0; 
+     z-index: 0;
+     position: absolute;
+     padding: 0%;
+     left: 43%;
+     top: 14.850%;
+     height: 83.100%;
+     width: 48.930%;
+     background-image: url('../images/molduraFalaGuia.svg');
+     background-size: 100%;
+     background-repeat: no-repeat;
+    /* background-color: white; */
+
+     animation-fill-mode: forwards;
+     animation-name: aparecer;
+     animation-duration: 1.0s;
+     animation-delay: 1.5s;
+    /* animation-direction: normal; */
+}
+
+
+.desaparecerCaixaDeMensagem{
+    opacity: 1.0; 
+    z-index: 2000;
+    position: absolute;
+    padding: 0%;
+    left: 43%;
+    top: 13%;
+    height: 85%;
+    width: 50%;
+    background-image: url('../images/molduraFalaGuia.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+   /* background-color: white; */
+
+    animation-fill-mode: forwards;
+    animation-name: desaparecer;
+    animation-duration: 1s;
+    animation-delay: 0s;
+   /* animation-direction: normal; */
+}
+
+
+
+
+
+.escurecerFundo{
+    position: absolute;
+    opacity: 0.0;
+    z-index: 0;
+    left: -10%;
+    top: 0%;
+    height: 100%;
+    width: 120%;
+    background-color: rgba(0, 0, 0);
+
+    animation-fill-mode: forwards;
+    animation-name: escurecerFundo;
+    animation-direction: normal;
+    animation-duration: 1s;
+    animation-delay: 1s;
+}
+
+.clarearFundo{
+    position: absolute;
+    opacity: 0.6;
+    z-index: 3000;
+    left: -10%;
+    top: 0%;
+    height: 100%;
+    width: 120%;
+    background-color: rgba(0, 0, 0);
+
+    animation-fill-mode: forwards;
+    animation-name: clarearFundo;
+    animation-direction: normal;
+    animation-duration: 1s;
+    animation-delay: 0s;
+}

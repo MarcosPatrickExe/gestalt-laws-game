@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Oval&display=swap');
+
+:root{
+   /* --corDosBotoes: rgb(85, 85, 85); */
+    --transparenciaBotaoRanking: 0.6;
+}
+
+@keyframes girarHelice{
+    from{ transform: rotate(0deg); }
+    to{ transform: rotate(360deg); }
+}
+
+
+
+.fundoEscuro{
+    position: absolute;
+    left: -10%;
+    top: 0%;
+    height: 100%;
+    width: 120%;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+
+.helice{
+    position: absolute;
+    left: 67.300%;
+    top: 2%;
+    height: 41.500%;
+    width: 18.500%;
+    padding: 0%;
+    z-index: -5;
+    background-color: transparent;
+    background-image: url("../images/imagens_tela_selecao/helice.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    animation-name: girarHelice;
+    animation-duration: 3.0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+
+h3{ 
+    position: relative;
+    color: rgb(61, 42, 5);
+    font-size: 380.100%;
+    font-family: 'Nova Oval', cursive; 
+    text-align: center; 
+    line-height: 2.2;
+    /*
+    text-shadow: 3px 3px 2px rgb(70, 45, 25), -3px -3px 2px rgb(59, 34, 15);
+    */
+}
+
+
+
+
+
+.placaTorreRelogio:hover{
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transform: rotate(30deg);
+}
+.placaLaboratorio:hover{
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transform: rotate(-10deg);
+}
+.placaMoinho:hover{
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transform: rotate(-35deg);
+}
+
+
+
+.placaTorreRelogio h3{ 
+    font-size: 290%;
+    left: 0.250%;
+    top: 9.900%;
+}
+.placaLaboratorio h3{
+    left: -2.500%;
+    top: 1.500%;
+}
+.placaMoinho h3{
+    position: relative;
+    left: 1.500%;
+    top: 5.500%;
+}
+.placaTorreRelogio{ /*primeira de cima*/
+    position: absolute;
+    width: 82.150%;
+    height: 25.550%;
+    left: -1.050%;
+    top: -3.500%;
+    z-index: 100;
+    background-image: url('../images/imagens_tela_selecao/placa1.svg');
+    background-repeat: no-repeat;
+}
+.placaLaboratorio{/*placa do meio*/
+    position: absolute;
+    width: 82.150%;
+    height: 25.550%;
+    left: -12.600%;
+    top: 23.500%;
+    z-index: 90;
+    background-image: url('../images/imagens_tela_selecao/placa2.svg');
+    background-repeat: no-repeat;
+}
+.placaMoinho{
+    position: absolute;
+    width: 82.150%;
+    height: 25.550%;
+    left: 0.450%;
+    top: 48.400%;
+    z-index: 80;
+    background-image: url('../images/imagens_tela_selecao/placa3.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ .poste{
+    position: absolute;
+    width: 80%;
+    height: 120%;
+    left: -4.130%;
+    top: -31%;
+    z-index: 70;
+    background-position: center;
+    background-size: cover;
+    background-image: url('../images/imagens_tela_selecao/poste.svg');
+    background-repeat: no-repeat;
+}
+
+
+
+@keyframes virarPoste{
+    to{ transform: rotateX(-10deg); top: 21.200%; }  
+}
+
+#todoOposte{
+     position: absolute;
+     left: 30%;
+     top: 53.500%;
+     height: 90%;
+     width: 50%;
+     padding: 0%;
+     background-color: transparent;
+     transform: rotateX(90deg);  
+     z-index: 50;
+     animation-name: virarPoste;
+     animation-duration: 1s;
+     animation-timing-function: ease;
+     animation-delay: 0.5s;
+     animation-fill-mode: forwards;
+}
+
+
+
+
+
+
+#botaoRank{
+    position: absolute;
+    left: 81.200%;
+    top: 71.900%;
+    width: 17%;
+    height: 22%;
+    cursor: pointer;
+    opacity: var(--transparenciaBotaoRanking);
+    z-index: 20;
+  /*  background-color: rgba(255, 255, 255, 0.6); */
+}
+
+#coroaIMG{
+    position: absolute;
+    left: 14%;
+    top: 14%;
+    width: 70%;
+    height: 40%;
+    background-image: url('../images/imagens_tela_selecao/coroa.svg');
+    background-repeat: no-repeat;
+}
+
+#plaquinhaRank{/*placa abaixo da palabra "ranking"*/
+    position: absolute;
+    left: 5%;
+    top: 59%;
+    width: 92.900%;
+    height: 38.200%;
+    background-image: url('../images/imagens_tela_selecao/placa2.svg');
+    background-repeat: no-repeat;
+    /*background-color: rgb(0, 0, 0, 0.3); */
+}
+
+#castelo{/* TEXTO "RANKING" */
+    font-size: 260%;
+    position: relative;
+    top: 50%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+/*
+h3{
+    font-family: "Nova Oral"; 
+    font-size: 70px;
+    position: absolute;
+    left: 2%;
+    top: 87%;
+    color: white;
+    text-shadow: 0 0 55px black;
+} 
+
+h3:hover{
+    text-shadow: 0 0 105px red;
+    outline-width: 2px;
+    outline-offset: unset; 
+    transition-duration: 2s;
+}
+*/
+
+
+/*
+.boxDescricao{
+    width: 320px;
+    height: 380px;
+    background-color: rgb(197, 101, 21);
+    z-index: 35;
+    position: absolute;
+    left: 3%;
+    top: 30%;
+    box-shadow: 2px 2px 0px 4px rgb(101, 42, 3);
+}
+
+.boxDescricao h3{
+    font-size: 25px;
+    font-family: "arial";
+    color: white;
+    text-shadow:  3px 3px 5px black, -3px -3px 5px black;
+    z-index: 36;
+    padding: 3px 20px 3px 20px; /* Top, Right, Bottom, Left
+    position: inherit;
+    top: -20px;
+    text-align: center;
+    background-color: rgb(156, 64, 3);
+}
+
+.boxDescricao #personagem{
+    width: 85%;
+    height: 50%;
+    position: absolute;
+    left: 0; 
+    right: 0;
+    margin: auto;
+    top: 45%;
+    background-image: url('../images/personagem.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 150%;
+    border: 5px solid hsl(29, 98%, 23%);
+    z-index: 101;
+}
+*/

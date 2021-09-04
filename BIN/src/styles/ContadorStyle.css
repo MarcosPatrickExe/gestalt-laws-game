@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Oval&display=swap');
+
+@keyframes virarPlaca{
+    /*from{
+        top: -55%;
+        transform: rotateX(180deg);
+    }*/
+
+    to{
+        top: 0%;
+        transform: rotateX(360deg);
+    }
+}
+
+.contadorBox{
+    position: absolute;
+    left: 1.7%;
+    top: -35%; 
+    width: 13.900%;
+    height: 17.200%;
+    z-index: 100;
+    padding: 0;
+    margin: 0;
+
+    animation-name: virarPlaca;
+    animation-fill-mode: forwards;
+    animation-delay: 0.7s; 
+    animation-duration: 0.8s;
+    /*animation-direction: reverse;*/
+    animation-timing-function: ease-out;
+}
+
+#imgMoldura{
+    position: relative;
+    left: 0%;
+    top: 0%;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-image: url('../images/contadorMoldura.svg');
+    z-index: 101;
+}
+
+#segundos{
+    position: absolute;
+    font-size: 280%;
+    font-family: 'Nova Oval', cursive;
+    left: 10.100%;
+    top: 45.500%;
+    width: 75%;
+    height: 40%;
+    padding: 0%;
+    color:  rgb(61, 42, 5);/* rgb(255, 176, 96); ANTIGA COR*/
+    z-index: 150;
+   /* text-shadow: 4px 4px 2px rgb(70, 49, 17), -3px -3px 2px rgb(70, 49, 17);
+    */
+}

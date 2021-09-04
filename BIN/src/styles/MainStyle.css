@@ -1,0 +1,60 @@
+*{ margin: 0; padding: 0; }
+
+:root{
+    --widthHeightHomeButton: 130px;
+    --corDosBotoes: rgb(85, 85, 85);
+}
+
+@keyframes virarPlacaSelecao{
+    from{
+        top: -100px;
+        transform: rotateX(180deg);
+    }
+
+    to{
+        top: 0px;
+        transform: translateY(30px);
+        transform: rotateX(360deg);
+    }
+}
+
+#BotaoVoltar{
+    position: absolute;
+    left: 90.690%;
+    margin-top: 0.850%;
+    width: 8.700%;
+    height: 13.500%;
+    background-repeat: no-repeat;
+    z-index: 3020;
+    background-image: url('../images/botoes/botao_voltar.png');
+    background-position: center;
+    background-size: cover;
+
+    animation-name: virarPlacaSelecao;
+    animation-fill-mode: forwards;
+    /*animation-delay: 3s; */
+    animation-duration: 1s;
+    /*animation-direction: reverse;*/
+}
+
+
+
+/*  BOTAO HOME ANTIGO
+#botaoTelaSelecao{
+    background-color: rgb(255, 185, 138);
+    background-image: url('../images/home icon.png');
+    background-origin: padding-box;
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    background-position: center;
+    position: absolute;
+    top: 4%;
+    left: 5%;
+    width: var(--widthHeightHomeButton);
+    height: var(--widthHeightHomeButton);
+    border-radius: 25px;
+    z-index: 150;
+    box-shadow: 4px 5px 0px 4px rgb(143, 93, 1);
+    border: none;
+}
+*/

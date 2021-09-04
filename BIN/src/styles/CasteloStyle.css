@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Spectral+SC:wght@200&display=swap');
+
+
+@keyframes escurecerCastelo{
+    from{ opacity: 0.0; z-index: 0; }
+    to{ opacity: 0.5; z-index: 1000; }
+}
+
+
+@keyframes aparecerTabela{
+    to{ transform: translate(0%, 265%); }
+}
+
+
+.tabela{
+    position: absolute;
+    left: 13.150%;
+    top: 27.450%;
+    text-align: center;
+    padding: 0%;
+    height: 63%;
+    width: 75%;
+    background-color: rgba(2, 2, 235, 0.2);
+    overflow: scroll;
+}
+
+/* MODAL QUE IRÁ APARECER PARA EXIBIR A TELA DE RANKING */
+.tabelaModalRanking{
+    position: absolute;
+    height: 89%;
+    width: 50%;/* 70%*/
+    left: 25%;
+    top: -230%;
+    z-index: 100;
+
+    background-image: url('../images/imagens_ranking/molduraDadosRanking.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: 1200;
+
+    animation-name: aparecerTabela;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+
+
+.titulo{
+    text-transform: uppercase;
+}
+
+
+#sombraEntrePlacaEFundo{
+    position: absolute;
+    opacity: 0.0;
+    z-index: 0;
+    left: -10%;
+    top: 0%;
+    height: 100%;
+    width: 120%;
+    background-color: rgba(0, 0, 0);
+
+    animation-fill-mode: forwards;
+    animation-name: escurecerCastelo;
+    animation-direction: normal;
+    animation-duration: 1s;
+    animation-delay: 1s;
+}
+
+/*
+.AlocarBackground{
+    position: absolute;
+    left: 200px;
+    top: 200px;
+    width: auto;
+    height: 100%;
+    background-color: blueviolet;
+}
+
+
+.imagemInserida{
+    position: absolute;
+    left: 0px;
+    top: -1px;
+    width: 100%;
+    height: auto;
+    padding: 0px;
+    z-index: 9;
+}
+*/
+
+/*
+.botao1{
+    background-color: rgb(11, 72, 185);
+    position: absolute;
+    top: 624px;
+    left: 52%;
+    width: 250px;
+    height: 60px;
+    border-radius: 25px;
+    z-index: 10;
+    box-shadow: 4px 5px 0px 4px rgb(3, 2, 63);
+}
+*/
+
+/*
+span{
+    font-size: 33px;
+    cursor: 'pointer'; 
+    font-weight: 'bold';
+    font-family: 'Spectral SC', serif;
+    color: white;
+    /**-webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(34, 36, 39);
+    text-shadow: 0.17em  0.11em 0.1em black;
+}
+*/
+
+td, th{ font-family: 'Spectral SC', serif; }
+
+/*
+.botao1:hover{
+   /cursor: url("../images/cursor/curse.png"), auto; 
+}
+*/
+
+.TituloDoCentro{
+    color: rgb(241, 148, 8); 
+    position: 'absolute';
+    /**margin-left: 40%;*/
+    text-align: center;
+    margin-top: -10px;
+    font-size: 40px;
+}
+
+
+/*
+.tabelaRanking{
+    
+    border-collapse: collapse;
+    border-spacing: 10px 10px*
+    width: 500px;
+    height: 500px;
+    background-color: green;
+    z-index: 57;
+}
+*/
+
+table{
+    /* border-collapse: collapse; */
+    border-collapse: collapse; 
+    width: 100%;
+    z-index: 21;
+    position: relative;
+    top: 0%;
+    left: 0%;
+}
+
+table, tr, th{
+    padding-left: 2.7%;
+    text-align: center;
+    height: 50px;
+    color: white;
+   /* border: 1px solid rgb(32, 32, 32); */
+    background-color: rgb(170, 103, 103);
+}
+
+table, tr, td{
+    text-align: center;
+    
+    height: 30px;
+    vertical-align: center;
+    border: 0px solid rgb(32, 32, 32); 
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(75, 73, 73);
+}
+
+tr, td:hover {
+    background-color: rgb(231, 183, 25);
+}

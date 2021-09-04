@@ -1,0 +1,59 @@
+
+@keyframes fadeOut{/*escurece*/
+    from{ background-color: rgba(0,0,0, 0); z-index: -100;}/*fundo preto totalmente invísel e a tela completamente visíel*/
+    to{ background-color: rgba(0,0,0, 1.0); z-index: 3000;} /* fundo preto totalmente visivel e a tela desaparece, fazendo assim o efeito 'fade-out'  */
+
+    /*
+    0%{ background-color: rgba(0,0,0, 0); }
+
+    15%{ background-color: rgba(0,0,0, 0.5); }
+
+    30%{ background-color: rgba(0,0,0, 1.0); }
+
+    70%{ background-color: rgba(0,0,0, 0.5); }
+
+    100%{ background-color: rgba(0,0,0, 0); z-index: -200;}
+    */
+}
+
+@keyframes fadeIn{/* iluminar */
+    from{ background-color: rgba(0,0,0, 1.0); z-index: 3000;}/*exibe fundo preto */
+    to{ background-color: rgba(0, 0, 0, 0.1); z-index: -100; }/*retira o fundo preto, fazendo a tela aparecer*/
+
+    /*
+    0%{ background-color: rgba(0,0,0, 0); }
+
+    15%{ background-color: rgba(0,0,0, 0.5); }
+
+    30%{ background-color: rgba(0,0,0, 1.0); }
+
+    70%{ background-color: rgba(0,0,0, 0.5); }
+
+    100%{ background-color: rgba(0,0,0, 0); z-index: -200;}
+    */
+}
+
+.fadeOut{
+    position: absolute;
+    left: -10%;
+    top: 0%;
+    height: 100%;
+    width: 120%;
+    z-index: -100;
+
+    animation-name: fadeOut;
+    animation-duration: 1.5s;   
+}
+
+
+.fadeIn{
+    position: absolute;
+    left: -10%;
+    top: 0%;
+    height: 100%;
+    width: 120%;
+    z-index: -100;
+
+    animation-name: fadeIn;
+    animation-duration: 2s;
+}

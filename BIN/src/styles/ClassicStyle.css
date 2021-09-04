@@ -1,0 +1,129 @@
+body{
+    background-color: rgb(88, 30, 13);    
+}
+
+.AlocarBackground{
+    position: absolute;
+    left: 200px;
+    top: 200px;
+    width: auto;
+    height: 100%;
+    background-color: blueviolet;
+}
+
+.canvas{
+    border: 15px double rgb(241, 148, 8);
+    width: 1020px;/*valor antigo: 1200px */
+    height: 570px;
+    position: absolute;
+    padding: 0px;
+    margin: auto;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+}
+
+.imagemInserida{
+    position: absolute;
+    left: 0px;
+    top: -1px;
+    width: 100%;
+    height: auto;
+    padding: 0px;
+    z-index: 9;
+}
+
+.botao1{/*BOTÃO DA DIREITA*/
+    background-color: rgb(11, 72, 185);
+    position: absolute;
+    top: 624px;
+    left: 52%;
+    width: 250px;
+    height: 60px;
+    border-radius: 25px;
+    z-index: 10;
+    box-shadow: 4px 5px 0px 4px rgb(3, 2, 63);
+}
+
+span{
+    font-size: 33px;
+    cursor: 'pointer'; 
+    font-weight: 'bold';
+    color: white;
+    /**-webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(34, 36, 39);*/
+    text-shadow: 0.17em  0.11em 0.1em black;
+}
+
+.botao1:hover{
+    cursor: 'hand';
+}
+
+.botao2{/*BOTÃO DA ESQUERDA*/
+    background-color: rgb(141, 12, 192);
+    position: absolute;
+    top: 4%;
+    left: 5%;
+    width: 310px;
+    height: 60px;
+    border-radius: 25px;
+    z-index: 10;
+    box-shadow: 4px 5px 0px 4px rgb(56, 2, 63);
+}
+
+.TituloDoCentro{
+    color: rgb(241, 148, 8); 
+    position: 'absolute';
+    /**margin-left: 40%;*/
+    text-align: center;
+    margin-top: -10px;
+    font-size: 40px;
+}
+
+
+/*
+.tabelaRanking{
+    
+    border-collapse: collapse;
+    border-spacing: 10px 10px*
+    width: 500px;
+    height: 500px;
+    background-color: green;
+    z-index: 57;
+}
+*/
+
+table{
+    /* border-collapse: collapse; */
+    border-collapse: collapse; 
+    width: 23%;
+    z-index: 21;
+    position: absolute;
+    top: 33%;
+    left: 39%;
+}
+
+table, tr, th{
+    height: 50px;
+    color: white;
+   /* border: 1px solid rgb(32, 32, 32); */
+    background-color: rgb(170, 103, 103);
+}
+
+table, tr, td{
+    text-align: center;
+    background-color: rgb(216, 214, 213);
+    height: 30px;
+    vertical-align: center;
+    border: 0px solid rgb(32, 32, 32); 
+    font-weight: bold;
+    text-transform: UpperCase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(75, 73, 73);
+}
+
+tr, td:hover {
+    background-color: rgb(231, 183, 25);
+}
