@@ -20,7 +20,7 @@ Criação de um software web pela a equipe <strong>OTACUS'S DESIGNERS</strong> q
 
 <Hr />
 
-### `Link de acesso ao jogo online:`
+### :joystick: `Jogue o nosso game online! Link de acesso ao jogo:`
 https://marcospatrickexe.github.io/gestalt-laws-game-deploy/
 
 <Hr />
@@ -43,9 +43,14 @@ https://marcospatrickexe.github.io/gestalt-laws-game-deploy/
 :heavy_check_mark: RF06: Feedbacks instantâneos <Br />
 :heavy_check_mark: RF07: Nível de Progressão <Br />
 
-### :warning: `Orientações para a execução do software` :warning:
+### OTAKUS DESIGNERS
+<img src="https://i.imgur.com/SRGPBD7.gif" alt="ilustração - otakus designers">
 
-Antes de tudo, é necesário que você tenha instalado no seu pc o ambiente do NodeJS para que assim o sistema possa ser executado.
+<Br />
+
+### :warning: `Orientações para a execução do software localmente` :warning:
+
+Antes de tudo, é necesário que você tenha instalado no seu pc todo o ambiente do NodeJS para que assim o sistema possa ser executado.
 Caso você não tenha ele, baixe-o (na versão LTS) no próximo link e o instale!
 
 <strong>https://nodejs.org/en/</strong>
