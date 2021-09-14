@@ -43,10 +43,17 @@ https://marcospatrickexe.github.io/gestalt-laws-game-deploy/
 :heavy_check_mark: RF06: Feedbacks instantâneos <Br />
 :heavy_check_mark: RF07: Nível de Progressão <Br />
 
-### OTAKUS DESIGNERS
-<img src="https://i.imgur.com/SRGPBD7.gif" alt="ilustração - otakus designers">
+<hr />
 
-<Br />
+### OTACUS´S DESIGNERS
+<img src="https://i.imgur.com/SRGPBD7.gif" alt="ilustração em gif- otakus designers">
+
+
+
+### FUNÇÕES DE CADA MEMBRO DA EQUIPE:
+<img src="https://i.imgur.com/4GCvLLx.png" alt="membros da equipe 'otakus designers'">
+
+<hr />
 
 ### :warning: `Orientações para a execução do software localmente` :warning:
 
