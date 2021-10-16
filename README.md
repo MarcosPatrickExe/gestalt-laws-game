@@ -16,7 +16,7 @@ Criação de um software web pela a equipe <strong>OTACUS'S DESIGNERS</strong> q
 <Hr />
 
 ### `Status do projeto:`
-:pushpin: Em fase de produção... :computer:
+:pushpin: Concluído :computer:
 
 <Hr />
 
