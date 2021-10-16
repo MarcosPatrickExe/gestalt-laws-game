@@ -20,8 +20,8 @@ Criação de um software web pela a equipe <strong>OTACUS'S DESIGNERS</strong> q
 
 <Hr />
 
-### :joystick: `Jogue o nosso game online! Link de acesso ao jogo:`
-https://marcospatrickexe.github.io/gestalt-laws-game-deploy/
+## :joystick: `Jogue o nosso game online! Link de acesso ao jogo:`
+### https://marcospatrickexe.github.io/gestalt-laws-game-deploy/
 
 <Hr />
 
